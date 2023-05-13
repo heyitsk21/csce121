@@ -1,0 +1,606 @@
+---------------------------------------------
+Test loadLevel
+Test loading valid map
+map_valid.txt is opened.
+maxRow is numeric.
+maxRow is >= 1.
+maxCol is numeric.
+maxCol is >= 1.
+number of tiles is <= 2147483647.
+player row is numeric.
+player.row is >= 0.
+player.row is < maxRow.
+player col is numeric.
+player.col is >= 0.
+player.col is < maxCol.
+a way out exists
+only valid symbol in map.
+exactly correct number of tiles in map.
+successfully loaded level
+Deleting map 0x5569d2aff0c0
+
+Test loading from a file that does not exist
+file_dne.txt cannot be opened.
+Deleting map 0
+
+Test loading map with letter rows
+rc_r_alph.txt is opened.
+maxRow is non-numeric.
+Deleting map 0
+
+Test loading map with letter columns
+rc_c_alph.txt is opened.
+maxRow is numeric.
+maxRow is >= 1.
+maxCol is non-numeric.
+Deleting map 0
+
+Test loading map with negative rows
+rc_r_neg.txt is opened.
+maxRow is numeric.
+maxRow is < 1.
+Deleting map 0
+
+Test loading map with negative columns
+rc_c_neg.txt is opened.
+maxRow is numeric.
+maxRow is >= 1.
+maxCol is numeric.
+maxCol is < 1.
+Deleting map 0
+
+Test loading map with too many tiles
+rc_large.txt is opened.
+maxRow is numeric.
+maxRow is >= 1.
+maxCol is numeric.
+maxCol is >= 1.
+number of tiles is > 2147483647.
+Deleting map 0
+
+Test loading map with player letter rows
+player_pos_alph_r.txt is opened.
+maxRow is numeric.
+maxRow is >= 1.
+maxCol is numeric.
+maxCol is >= 1.
+number of tiles is <= 2147483647.
+player row is non-numeric.
+Deleting map 0
+
+Test loading map with player letter columns
+player_pos_alph_c.txt is opened.
+maxRow is numeric.
+maxRow is >= 1.
+maxCol is numeric.
+maxCol is >= 1.
+number of tiles is <= 2147483647.
+player row is numeric.
+player.row is >= 0.
+player.row is < maxRow.
+player col is non-numeric.
+Deleting map 0
+
+Test loading map with player out of pounds vertically negative
+player_oob_neg_r.txt is opened.
+maxRow is numeric.
+maxRow is >= 1.
+maxCol is numeric.
+maxCol is >= 1.
+number of tiles is <= 2147483647.
+player row is numeric.
+player.row is < 0.
+Deleting map 0
+
+Test loading map with player out of pounds horizontally negative
+player_oob_neg_c.txt is opened.
+maxRow is numeric.
+maxRow is >= 1.
+maxCol is numeric.
+maxCol is >= 1.
+number of tiles is <= 2147483647.
+player row is numeric.
+player.row is >= 0.
+player.row is < maxRow.
+player col is numeric.
+player.col is < 0.
+Deleting map 0
+
+Test loading map with player out of pounds vertically positive
+player_oob_pos_r.txt is opened.
+maxRow is numeric.
+maxRow is >= 1.
+maxCol is numeric.
+maxCol is >= 1.
+number of tiles is <= 2147483647.
+player row is numeric.
+player.row is >= 0.
+player.row is >= maxRow.
+Deleting map 0
+
+Test loading map with player out of pounds horizontally positive
+player_oob_pos_c.txt is opened.
+maxRow is numeric.
+maxRow is >= 1.
+maxCol is numeric.
+maxCol is >= 1.
+number of tiles is <= 2147483647.
+player row is numeric.
+player.row is >= 0.
+player.row is < maxRow.
+player col is numeric.
+player.col is >= 0.
+player.col is >= maxCol.
+Deleting map 0
+
+Test loading map with invalid tiles
+map_invalid.txt is opened.
+maxRow is numeric.
+maxRow is >= 1.
+maxCol is numeric.
+maxCol is >= 1.
+number of tiles is <= 2147483647.
+player row is numeric.
+player.row is >= 0.
+player.row is < maxRow.
+player col is numeric.
+player.col is >= 0.
+player.col is < maxCol.
+invalid symbol in map.
+exactly correct number of tiles in map.
+bailing out.
+Deleting map 0
+
+Test loading an empty file
+empty_file.txt is opened.
+maxRow is non-numeric.
+Deleting map 0
+
+Test loading an empty map with non-zero dimensions
+map_empty.txt is opened.
+maxRow is numeric.
+maxRow is >= 1.
+maxCol is numeric.
+maxCol is >= 1.
+number of tiles is <= 2147483647.
+player row is numeric.
+player.row is >= 0.
+player.row is < maxRow.
+player col is numeric.
+player.col is >= 0.
+player.col is < maxCol.
+not enough tiles in map.
+only valid symbol in map.
+bailing out.
+Deleting map 0
+
+Test loading a map with more tiles than indicated by dimensions
+map_too_many_tiles.txt is opened.
+maxRow is numeric.
+maxRow is >= 1.
+maxCol is numeric.
+maxCol is >= 1.
+number of tiles is <= 2147483647.
+player row is numeric.
+player.row is >= 0.
+player.row is < maxRow.
+player col is numeric.
+player.col is >= 0.
+player.col is < maxCol.
+a way out exists
+only valid symbol in map.
+too many tiles in map.
+bailing out.
+Deleting map 0
+
+Test loading map with not enough tiles
+map_too_few_tiles.txt is opened.
+maxRow is numeric.
+maxRow is >= 1.
+maxCol is numeric.
+maxCol is >= 1.
+number of tiles is <= 2147483647.
+player row is numeric.
+player.row is >= 0.
+player.row is < maxRow.
+player col is numeric.
+player.col is >= 0.
+player.col is < maxCol.
+a way out exists
+not enough tiles in map.
+only valid symbol in map.
+bailing out.
+Deleting map 0
+
+Test loading a map with no exit
+map_no_exit.txt is opened.
+maxRow is numeric.
+maxRow is >= 1.
+maxCol is numeric.
+maxCol is >= 1.
+number of tiles is <= 2147483647.
+player row is numeric.
+player.row is >= 0.
+player.row is < maxRow.
+player col is numeric.
+player.col is >= 0.
+player.col is < maxCol.
+only valid symbol in map.
+exactly correct number of tiles in map.
+no way out
+bailing out.
+Deleting map 0
+DONE (╯°□°）╯︵ ┻━┻
+---------------------------------------------
+
+
+
+---------------------------------------------
+Test getDirection
+Testing input w
+input is a lowercase letter
+move up
+Testing input s
+input is a lowercase letter
+move down
+Testing input a
+input is a lowercase letter
+move left
+Testing input d
+input is a lowercase letter
+move right
+Testing input W
+input is a capital letter
+move up
+Testing input  
+input is not a letter
+move nowhere
+Testing input L
+input is a capital letter
+move nowhere
+DONE (╯°□°）╯︵ ┻━┻
+---------------------------------------------
+
+
+
+---------------------------------------------
+Test resizeMap
+Test resize when row and col are both positive
+Before
+[INFO] (test_resizeMap:244) map1_ptr = 0x5569d2aff0c0
+[INFO] (test_resizeMap:245) maxRow = 4
+[INFO] (test_resizeMap:246) maxCol = 4
+map is not nullptr
+maxRow is > 0
+maxCol is > 0
+resized the map
+Deleting map 0x5569d2aff1b0
+After
+[INFO] (test_resizeMap:252) map1_ptr = 0
+[INFO] (test_resizeMap:253) maxRow = 8
+[INFO] (test_resizeMap:254) maxCol = 8
+
+Test resize when row and col are both negative
+Before
+[INFO] (test_resizeMap:261) map1_ptr = 0x5569d2aff0c0
+[INFO] (test_resizeMap:262) maxRow = -4
+[INFO] (test_resizeMap:263) maxCol = 4
+map is not nullptr
+maxRow is <= 0
+After
+[INFO] (test_resizeMap:268) map1_ptr = 0x5569d2aff0c0
+[INFO] (test_resizeMap:269) resized = 0
+[INFO] (test_resizeMap:270) maxRow = -4
+[INFO] (test_resizeMap:271) maxCol = 4
+Deleting map 0x5569d2aff0c0
+
+Test resize when row is positve and col is negative
+Before
+[INFO] (test_resizeMap:280) map1_ptr = 0x5569d2aff0c0
+[INFO] (test_resizeMap:281) maxRow = 4
+[INFO] (test_resizeMap:282) maxCol = -4
+map is not nullptr
+maxRow is > 0
+maxCol is <= 0
+After
+[INFO] (test_resizeMap:287) map1_ptr = 0x5569d2aff0c0
+[INFO] (test_resizeMap:288) resized = 0
+[INFO] (test_resizeMap:289) maxRow = 4
+[INFO] (test_resizeMap:290) maxCol = -4
+Deleting map 0x5569d2aff0c0
+
+Test resizing nullptr
+Before
+[INFO] (test_resizeMap:301) map1_ptr = 0
+[INFO] (test_resizeMap:302) maxRow = 1
+[INFO] (test_resizeMap:303) maxCol = 1
+map is nullptr
+After
+[INFO] (test_resizeMap:307) map1_ptr = 0
+[INFO] (test_resizeMap:308) resized = 0
+[INFO] (test_resizeMap:309) maxRow = 1
+[INFO] (test_resizeMap:310) maxCol = 1
+DONE (╯°□°）╯︵ ┻━┻
+---------------------------------------------
+
+
+
+---------------------------------------------
+Test doPlayerMove
+Test momvement with no treasure
+Test move to (-1, 0)
+nextCol < maxCol
+nextRow < maxRow
+nextCol >= 0
+nextRow < 0
+nextRow >= 0
+next tile out of bounds or not a pillar
+next tile out of bounds or not a monster
+don't move
+updated player location
+
+Test move to (0, -1)
+nextCol < maxCol
+nextRow < maxRow
+nextCol < 0
+nextCol >= 0
+nextRow >= 0
+next tile out of bounds or not a pillar
+next tile out of bounds or not a monster
+don't move
+updated player location
+
+Test move to (0, 0)
+nextCol < maxCol
+nextRow < maxRow
+nextCol >= 0
+nextRow >= 0
+next tile out of bounds or not a pillar
+map[nextRow][nextCol] == TILE_MONSTER
+next tile out of bounds or not a monster
+don't move
+updated player location
+
+Test move to (0, 1)
+nextCol < maxCol
+nextRow < maxRow
+nextCol >= 0
+nextRow >= 0
+map[nextRow][nextCol] == TILE_PILLAR
+next tile out of bounds or not a pillar
+next tile out of bounds or not a monster
+don't move
+updated player location
+
+Test move to (0, 2)
+nextCol < maxCol
+nextRow < maxRow
+nextCol >= 0
+nextRow >= 0
+next tile out of bounds or not a pillar
+next tile out of bounds or not a monster
+open tile
+updated player location
+
+Test move to (0, 3)
+nextCol >= maxCol
+nextCol < maxCol
+nextRow < maxRow
+nextCol >= 0
+nextRow >= 0
+next tile out of bounds or not a pillar
+next tile out of bounds or not a monster
+don't move
+updated player location
+
+Test move to (2, 2)
+nextCol < maxCol
+nextRow < maxRow
+nextCol >= 0
+nextRow >= 0
+next tile out of bounds or not a pillar
+next tile out of bounds or not a monster
+found exit without treasure
+updated player location
+
+Test move to (4, 0)
+nextCol < maxCol
+nextRow < maxRow
+nextCol >= 0
+nextRow >= 0
+next tile out of bounds or not a pillar
+next tile out of bounds or not a monster
+found amulet
+updated player location
+
+Test move to (4, 2)
+nextCol < maxCol
+nextRow < maxRow
+nextCol >= 0
+nextRow >= 0
+next tile out of bounds or not a pillar
+next tile out of bounds or not a monster
+found treasure
+updated player location
+
+Test move to (5, 0)
+nextCol < maxCol
+nextRow >= maxRow
+nextRow < maxRow
+nextCol >= 0
+nextRow >= 0
+next tile out of bounds or not a pillar
+next tile out of bounds or not a monster
+don't move
+updated player location
+
+Test momvement with treasure
+Test move to (-1, 0)
+nextCol < maxCol
+nextRow < maxRow
+nextCol >= 0
+nextRow < 0
+nextRow >= 0
+next tile out of bounds or not a pillar
+next tile out of bounds or not a monster
+don't move
+updated player location
+
+Test move to (0, -1)
+nextCol < maxCol
+nextRow < maxRow
+nextCol < 0
+nextCol >= 0
+nextRow >= 0
+next tile out of bounds or not a pillar
+next tile out of bounds or not a monster
+don't move
+updated player location
+
+Test move to (0, 0)
+nextCol < maxCol
+nextRow < maxRow
+nextCol >= 0
+nextRow >= 0
+next tile out of bounds or not a pillar
+map[nextRow][nextCol] == TILE_MONSTER
+next tile out of bounds or not a monster
+don't move
+updated player location
+
+Test move to (0, 1)
+nextCol < maxCol
+nextRow < maxRow
+nextCol >= 0
+nextRow >= 0
+map[nextRow][nextCol] == TILE_PILLAR
+next tile out of bounds or not a pillar
+next tile out of bounds or not a monster
+don't move
+updated player location
+
+Test move to (0, 2)
+nextCol < maxCol
+nextRow < maxRow
+nextCol >= 0
+nextRow >= 0
+next tile out of bounds or not a pillar
+next tile out of bounds or not a monster
+open tile
+updated player location
+
+Test move to (0, 3)
+nextCol >= maxCol
+nextCol < maxCol
+nextRow < maxRow
+nextCol >= 0
+nextRow >= 0
+next tile out of bounds or not a pillar
+next tile out of bounds or not a monster
+don't move
+updated player location
+
+Test move to (2, 2)
+nextCol < maxCol
+nextRow < maxRow
+nextCol >= 0
+nextRow >= 0
+next tile out of bounds or not a pillar
+next tile out of bounds or not a monster
+found exit with treasure
+updated player location
+
+Test move to (4, 0)
+nextCol < maxCol
+nextRow < maxRow
+nextCol >= 0
+nextRow >= 0
+next tile out of bounds or not a pillar
+next tile out of bounds or not a monster
+open tile
+updated player location
+
+Test move to (4, 2)
+nextCol < maxCol
+nextRow < maxRow
+nextCol >= 0
+nextRow >= 0
+next tile out of bounds or not a pillar
+next tile out of bounds or not a monster
+open tile
+updated player location
+
+Test move to (5, 0)
+nextCol < maxCol
+nextRow >= maxRow
+nextRow < maxRow
+nextCol >= 0
+nextRow >= 0
+next tile out of bounds or not a pillar
+next tile out of bounds or not a monster
+don't move
+updated player location
+
+Deleting map 0x5569d2aff0c0
+Test move to (2, 2)
+nextCol < maxCol
+nextRow < maxRow
+nextCol >= 0
+nextRow >= 0
+next tile out of bounds or not a pillar
+next tile out of bounds or not a monster
+found door
+updated player location
+Test move to (2, 2)
+nextCol < maxCol
+nextRow < maxRow
+nextCol >= 0
+nextRow >= 0
+next tile out of bounds or not a pillar
+next tile out of bounds or not a monster
+open tile
+updated player location
+Deleting map 0x5569d2aff0c0
+DONE (╯°□°）╯︵ ┻━┻
+---------------------------------------------
+
+
+
+---------------------------------------------
+Test doMonsterAttack
+
+Test moving the monster further away from player
+found monster up
+found monster down
+found monster left
+found monster right
+not eaten by monster
+found monster up
+found monster down
+found monster left
+found monster right
+eaten by monster
+Deleting map 0x5569d2aff0c0
+Test moving the blind monster
+found pillar up
+found pillar down
+found pillar left
+found pillar right
+not eaten by monster
+Deleting map 0x5569d2aff0c0
+DONE (╯°□°）╯︵ ┻━┻
+---------------------------------------------
+
+
+
+---------------------------------------------
+Test deleteMap
+Delete non-nullptr
+map is not nullptr
+deleted map
+Deleting map 0
+
+Delete nullptr
+map is nullptr
+DONE (╯°□°）╯︵ ┻━┻
+---------------------------------------------
